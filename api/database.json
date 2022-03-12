@@ -1,0 +1,84 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "firstName": "",
+            "lastName": "",
+            "email": "",
+            "password": ""
+        }
+    ],
+    "style": [
+        {
+            "id": 1,
+            "name": "",
+            "price": 0
+        }
+    ],
+    "wood": [
+        {
+            "id": 1,
+            "name": "",
+            "price": 0
+        }
+    ],
+    "color": [
+        {
+            "id": 1,
+            "name": "",
+            "price": 0
+        }
+    ],
+    "countertop": [
+        {
+            "id": 1,
+            "name": "",
+            "price": 0
+        }
+    ],
+    "hardware": [
+        {
+            "id": 1,
+            "name": "",
+            "price": 0
+        }
+    ],
+    "customOrder": [
+        {
+            "id": 1,
+            "styleId": 0,
+            "woodId": 0,
+            "colorId": 0,
+            "countertopId": 0,
+            "hardwareId": 0,
+            "size": 0,
+            "timestamp": 0,
+            "purchaseId": 0
+        }
+    ],
+    "purchase": [
+        {
+            "id": 1,
+            "userId": 0,
+            "timestamp": ""
+        }
+    ],
+    "inventory": [
+        {
+            "id": 1,
+            "styleId": 0,
+            "imgUrl": "",
+            "price": 0,
+            "purchaseId": 0,
+            "ifNotPurchaseId": 0
+        }
+    ],
+    "contact": [
+        {
+            "id": 1,
+            "userId": 0,
+            "message": "",
+            "timestamp": ""
+        }
+    ]
+}
