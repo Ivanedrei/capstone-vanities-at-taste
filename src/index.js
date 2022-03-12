@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { Vanities } from './components/Vanities';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from "react-router-dom"
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Vanities />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
