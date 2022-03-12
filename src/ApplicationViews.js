@@ -1,11 +1,19 @@
 import React from "react"
-import { Route, Routes, Navigate } from "react-router-dom"
-import { Vanities } from "./components/Vanities"
+import { Route, Routes } from "react-router-dom"
+import { Home } from "./Home"
+import { ContactUs } from "./components/contact/ContactUs"
+
 
 export const ApplicationViews = () => {
     return (
         <>
-            <p>hello</p>
+            <Routes>
+                {/* Render the location list when http://localhost:3000/ */}
+                <Route exact path="/" element={<Home />} />
+
+                {/* Render the animal list when http://localhost:3000/animals */}
+                <Route path="/contact" element={<ContactUs />} />
+            </Routes>
         </>
     )
 }
