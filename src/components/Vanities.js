@@ -1,9 +1,8 @@
 import React from "react"
 import { NavBar } from "./nav/NavBar"
-// import { CustomOrders } from "./orders/CustomOrders"
-// import { Inventory } from "./orders/Inventory"
 // import { ApplicationViews } from "../ApplicationViews"
 import "./Vanities.css"
+import { Link } from "react-router-dom";
 
 export const Vanities = () => {
 
@@ -15,15 +14,17 @@ export const Vanities = () => {
                 isAuthenticated={isAuthenticated}
                 setIsAuthenticated={setIsAuthenticated} /> */}
             <NavBar />
-            <div className="vanities" >
+            <div className="title" >
                 <h2>Vanities at Taste</h2>
             </div>
-            {/* <div className="cus"> */}
-            {/* <CustomOrders />
+            <div className="container_home">
+                <Link className="item_orders" to={`/orders`}>
+                    <button>Custom Order</button>
+                </Link>
+                <Link className="item_inventory" to={`/inventory`}>
+                    <button>Existing Inventory</button>
+                </Link>
             </div>
-            <div className="inv">
-            <Inventory /> */}
-            {/* </div> */}
         </>
     );
 };

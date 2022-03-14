@@ -1,4 +1,21 @@
-.vanities {
-    font-size: 30 px;
-    border: bold red 3px;
+.title {
+    font-size: 20px;
+    text-align-last: center;
+    margin: 3em;
 };
+/* \find out why I permanently need this to make my buttons work(centered)... */
+.item_orders {
+    border: 3px solid red;
+}
+
+.container_home {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    flex-wrap: wrap;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-top: 30em;
+}
