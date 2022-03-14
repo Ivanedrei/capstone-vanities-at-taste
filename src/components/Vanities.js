@@ -1,7 +1,9 @@
 import React from "react"
-// import { NavBar } from "./nav/NavBar"
+import { NavBar } from "./nav/NavBar"
+// import { CustomOrders } from "./orders/CustomOrders"
+// import { Inventory } from "./orders/Inventory"
 // import { ApplicationViews } from "../ApplicationViews"
-// import "./Vanities.css"
+import "./Vanities.css"
 
 export const Vanities = () => {
 
@@ -12,12 +14,16 @@ export const Vanities = () => {
                 setAuthUser={setAuthUser}
                 isAuthenticated={isAuthenticated}
                 setIsAuthenticated={setIsAuthenticated} /> */}
-            <h2>Nashville Kennels</h2>
-            <small>Loving care when you're not there.</small>
-            <address>
-                <div>Visit Us at the Nashville North Location</div>
-                <div>500 Puppy Way</div>
-            </address>
+            <NavBar />
+            <div className="vanities" >
+                <h2>Vanities at Taste</h2>
+            </div>
+            {/* <div className="cus"> */}
+            {/* <CustomOrders />
+            </div>
+            <div className="inv">
+            <Inventory /> */}
+            {/* </div> */}
         </>
     );
 };
