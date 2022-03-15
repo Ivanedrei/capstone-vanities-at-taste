@@ -9,16 +9,16 @@ export const NavBar = () => {
                 <Link className="navbar__link" to="/">vanities at taste</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/locations">view orders</Link>
+                <Link className="navbar__link" to="/orders">view orders</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/animals">about us</Link>
+                <Link className="navbar__link" to="/about">about us</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/customers">contact us</Link>
+                <Link className="navbar__link" to="/contact">contact us</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/employees">acount</Link>
+                <Link className="navbar__link" to="/account">account</Link>
             </li>
         </ul>
     )
