@@ -18,10 +18,10 @@ export const Vanities = () => {
                 <h2>Vanities at Taste</h2>
             </div>
             <div className="container_home">
-                <Link className="item_orders" to={`/orders`}>
+                <Link className="item_orders" to={`/custom_order`}>
                     <button>Custom Order</button>
                 </Link>
-                <Link className="item_inventory" to={`/inventory`}>
+                <Link className="item_inventory" to={`/inventory_order`}>
                     <button>Existing Inventory</button>
                 </Link>
             </div>
