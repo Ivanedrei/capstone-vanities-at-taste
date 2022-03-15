@@ -1,32 +1,29 @@
 import React from "react"
 import { NavBar } from "./nav/NavBar"
-// import { ApplicationViews } from "../ApplicationViews"
-import "./Vanities.css"
-import { Link } from "react-router-dom";
+import { ApplicationViews } from "../ApplicationViews"
 
 export const Vanities = () => {
+    // const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
+
+    // const setAuthUser = (user) => {
+    //     sessionStorage.setItem("kennel_customer", JSON.stringify(user))
+    //     setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
+    // }
+
+    // const clearUser = () => {
+    //     sessionStorage.clear();
+    //     setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
+    // }
 
     return (
         <>
-            {/* <NavBar clearUser={clearUser} isAuthenticated={isAuthenticated} />
-            <ApplicationViews
-                setAuthUser={setAuthUser}
-                isAuthenticated={isAuthenticated}
-                setIsAuthenticated={setIsAuthenticated} /> */}
             <NavBar />
-            <div className="title" >
-                <h2>Vanities at Taste</h2>
-            </div>
-            <div className="container_home">
-                <Link className="item_orders" to={`/custom_order`}>
-                    <button>Custom Order</button>
-                </Link>
-                <Link className="item_inventory" to={`/inventory_order`}>
-                    <button>Existing Inventory</button>
-                </Link>
-            </div>
+            <ApplicationViews />
         </>
-    );
-};
-
-export default Vanities;
+    )
+}
+{/* <NavBar clearUser={clearUser} isAuthenticated={isAuthenticated} /> */ }
+{/* <ApplicationViews
+    setAuthUser={setAuthUser}
+    isAuthenticated={isAuthenticated}
+    setIsAuthenticated={setIsAuthenticated} /> */}
