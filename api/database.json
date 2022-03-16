@@ -1,84 +1,205 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "firstName": "",
-            "lastName": "",
-            "email": "",
-            "password": ""
-        }
-    ],
-    "style": [
-        {
-            "id": 1,
-            "name": "",
-            "price": 0
-        }
-    ],
-    "wood": [
-        {
-            "id": 1,
-            "name": "",
-            "price": 0
-        }
-    ],
-    "color": [
-        {
-            "id": 1,
-            "name": "",
-            "price": 0
-        }
-    ],
-    "countertop": [
-        {
-            "id": 1,
-            "name": "",
-            "price": 0
-        }
-    ],
-    "hardware": [
-        {
-            "id": 1,
-            "name": "",
-            "price": 0
-        }
-    ],
-    "customOrder": [
-        {
-            "id": 1,
-            "styleId": 0,
-            "woodId": 0,
-            "colorId": 0,
-            "countertopId": 0,
-            "hardwareId": 0,
-            "size": 0,
-            "timestamp": 0,
-            "purchaseId": 0
-        }
-    ],
-    "purchase": [
-        {
-            "id": 1,
-            "userId": 0,
-            "timestamp": ""
-        }
-    ],
-    "inventory": [
-        {
-            "id": 1,
-            "styleId": 0,
-            "imgUrl": "",
-            "price": 0,
-            "purchaseId": 0,
-            "ifNotPurchaseId": 0
-        }
-    ],
-    "contact": [
-        {
-            "id": 1,
-            "userId": 0,
-            "message": "",
-            "timestamp": ""
-        }
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Ivan",
+      "lastName": "Ramirez",
+      "email": "me@me.com ",
+      "password": "password"
+    }
+  ],
+  "style": [
+    {
+      "id": 1,
+      "name": "rustic",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "farm",
+      "price": 100
+    },
+    {
+      "id": 3,
+      "name": "classic",
+      "price": 100
+    },
+    {
+      "id": 4,
+      "name": "Modern",
+      "price": 100
+    }
+  ],
+  "wood": [
+    {
+      "id": 1,
+      "name": "Maple",
+      "price": 0
+    },
+    {
+      "id": 2,
+      "name": "Cedar",
+      "price": 0
+    },
+    {
+      "id": 3,
+      "name": "Cherry Wood",
+      "price": 0
+    },
+    {
+      "id": 4,
+      "name": "White Pine",
+      "price": 0
+    },
+    {
+      "id": 5,
+      "name": "Barn Wood",
+      "price": 0
+    },
+    {
+      "id": 6,
+      "name": "Exotic Wood",
+      "price": 0
+    }
+  ],
+  "color": [
+    {
+      "id": 1,
+      "name": "Pacer White",
+      "price": 0
+    },
+    {
+      "id": 2,
+      "name": "Gray",
+      "price": 0
+    },
+    {
+      "id": 3,
+      "name": "Blue",
+      "price": 0
+    },
+    {
+      "id": 4,
+      "name": "light stain",
+      "price": 0
+    },
+    {
+      "id": 5,
+      "name": "dark stain",
+      "price": 0
+    },
+    {
+      "id": 6,
+      "name": "dark red/browm stain",
+      "price": 0
+    }
+  ],
+  "countertop": [
+    {
+      "id": 1,
+      "name": "Stone",
+      "price": 0
+    },
+    {
+      "id": 2,
+      "name": "Concrete",
+      "price": 0
+    },
+    {
+      "id": 3,
+      "name": "Wooden",
+      "price": 0
+    },
+    {
+      "id": 4,
+      "name": "Corian",
+      "price": 0
+    }
+  ],
+  "hardware": [
+    {
+      "id": 1,
+      "name": "black knobs",
+      "price": 0
+    },
+    {
+      "id": 2,
+      "name": "chrome handles",
+      "price": 0
+    },
+    {
+      "id": 3,
+      "name": "brushed nickel handles",
+      "price": 0
+    },
+    {
+      "id": 4,
+      "name": "golden handles",
+      "price": 0
+    },
+    {
+      "id": 5,
+      "name": "oil-rubbed bronze knobs",
+      "price": 0
+    },
+    {
+      "id": 6,
+      "name": "oil-rubbed bronze handles",
+      "price": 0
+    }
+  ],
+  "customOrder": [
+    {
+      "id": 1,
+      "styleId": 0,
+      "woodId": 0,
+      "colorId": 0,
+      "countertopId": 0,
+      "hardwareId": 0,
+      "sizeId": 0,
+      "timestamp": 0,
+      "purchaseId": 0
+    }
+  ],
+  "dimensions": [
+    {
+      "id": 1,
+      "width": 48,
+      "height": 36,
+      "deep": 20
+    },
+    [
+      {
+        "id": 1,
+        "width": 48,
+        "height": 36,
+        "deep": 20
+      }
     ]
+  ],
+  "purchase": [
+    {
+      "id": 1,
+      "userId": 0,
+      "timestamp": ""
+    }
+  ],
+  "inventory": [
+    {
+      "id": 1,
+      "styleId": 0,
+      "imgUrl": "",
+      "price": 0,
+      "purchaseId": 0,
+      "ifNotPurchaseId": 0
+    }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "userId": 0,
+      "message": "",
+      "timestamp": ""
+    }
+  ]
 }

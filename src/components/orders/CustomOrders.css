@@ -1,0 +1,14 @@
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.custom_form {
+    font-size: 20px;
+    margin: 10em;
+}
+
+.form-group {
+    margin: 1em;
+    text-align: center;
+}
