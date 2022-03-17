@@ -88,12 +88,13 @@ export const CustomOrderForm = () => {
     }
     return (
         <>
-            <h2> Custom Orders</h2>
             {/* <img> </img> */}
+            <h1> Custom Order</h1>
+            <h4>Est. Delivery: May 2022</h4>
             <form className="custom_form">
                 <fieldset>
                     <div className="form-group">
-                        <label htmlFor="style">Style: </label>
+                        <label htmlFor="style" className="category">Style: </label>
                         <select value={style.Id} name="styleId" id="styleId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
                             {style.map(style => (
@@ -106,7 +107,7 @@ export const CustomOrderForm = () => {
                 </fieldset>
                 <fieldset>
                     <div className="form-group">
-                        <label htmlFor="wood">Wood: </label>
+                        <label htmlFor="wood" className="category">Wood: </label>
                         <select value={wood.Id} name="woodId" id="woodId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
                             {wood.map(wood => (
@@ -119,7 +120,7 @@ export const CustomOrderForm = () => {
                 </fieldset>
                 <fieldset>
                     <div className="form-group">
-                        <label htmlFor="color">Color: </label>
+                        <label htmlFor="color" className="category">Color: </label>
                         <select value={color.Id} name="colorId" id="colorId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
                             {color.map(color => (
@@ -132,7 +133,7 @@ export const CustomOrderForm = () => {
                 </fieldset>
                 <fieldset>
                     <div className="form-group">
-                        <label htmlFor="countertop">Countertop: </label>
+                        <label htmlFor="countertop" className="category">Countertop: </label>
                         <select value={countertop.Id} name="countertopId" id="countertopId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
                             {countertop.map(countertop => (
@@ -145,7 +146,7 @@ export const CustomOrderForm = () => {
                 </fieldset>
                 <fieldset>
                     <div className="form-group">
-                        <label htmlFor="hardware">Hardware: </label>
+                        <label htmlFor="hardware" className="category">Hardware: </label>
                         <select value={hardware.Id} name="hardwareId" id="hardwareId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
                             {hardware.map(hardware => (
@@ -173,9 +174,9 @@ export const CustomOrderForm = () => {
                 <fieldset>
                     <div className="form-group">
                         {/* htmlFor and Id inside input shoiuld both match to work! */}
-                        <label htmlFor="size">Dimensions:</label>
-                        <input type="text" id="size" onChange={handleControlledInputChange} className="form-control" placeholder="width in inches" value={sizes.width} />
-                        <input type="text" id="size" onChange={handleControlledInputChange} className="form-control" placeholder="height in inches" value={sizes.height} />
+                        <label htmlFor="size" className="category">Dimensions:</label> <br />
+                        <input type="text" id="size" onChange={handleControlledInputChange} className="form-control" placeholder="width in inches" value={sizes.width} /> <br />
+                        <input type="text" id="size" onChange={handleControlledInputChange} className="form-control" placeholder="height in inches" value={sizes.height} /> <br />
                         <input type="text" id="size" onChange={handleControlledInputChange} className="form-control" placeholder="depth in inches" value={sizes.deep} />
                     </div>
                 </fieldset>
