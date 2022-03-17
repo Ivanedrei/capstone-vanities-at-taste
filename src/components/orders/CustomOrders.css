@@ -1,0 +1,37 @@
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.custom_form {
+    font-size: 20px;
+    margin: 10em;
+}
+
+.form-group {
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+
+}
+
+#styleId, #woodId, #colorId, #countertopId, #hardwareId {
+    margin: 1em;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+#size {
+    margin: 1em;
+}
+
+.category {
+    display: flex;
+    justify-content: left;
+}
