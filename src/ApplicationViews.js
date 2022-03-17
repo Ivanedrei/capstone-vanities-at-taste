@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import { Home } from "./components/Home"
 import { ContactUs } from "./components/contact/ContactUs"
 import { CustomOrderForm } from "./components/orders/CustomOrders"
+import { AboutUs } from "./components/about/AboutUs"
 // import { Inventory } from "./components/orders/Inventory"
 
 export const ApplicationViews = () => {
@@ -15,6 +16,8 @@ export const ApplicationViews = () => {
 
                 <Route path="/custom_order" element={<CustomOrderForm />} />
                 {/* <Route path="/inventory_order" element={<Inventory />} /> */}
+
+                <Route path="/about" element={<AboutUs />} />
             </Routes>
         </>
     )
