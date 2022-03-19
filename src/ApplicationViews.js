@@ -4,7 +4,7 @@ import { Home } from "./components/Home"
 import { ContactUs } from "./components/contact/ContactUs"
 import { CustomOrderForm } from "./components/orders/CustomOrders"
 import { AboutUs } from "./components/about/AboutUs"
-// import { Inventory } from "./components/orders/Inventory"
+import { Inventory } from "./components/orders/Inventory"
 
 export const ApplicationViews = () => {
     return (
@@ -15,7 +15,7 @@ export const ApplicationViews = () => {
                 <Route path="/contact" element={<ContactUs />} />
 
                 <Route path="/custom_order" element={<CustomOrderForm />} />
-                {/* <Route path="/inventory_order" element={<Inventory />} /> */}
+                <Route path="/inventory_order" element={<Inventory />} />
 
                 <Route path="/about" element={<AboutUs />} />
             </Routes>
