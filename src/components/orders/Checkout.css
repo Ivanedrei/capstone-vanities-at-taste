@@ -1,0 +1,19 @@
+.paragraph {
+    background-color: gray;
+    margin: 4em;
+    padding: 2em;
+}
+
+p {
+    font-size: 22px;
+}
+
+.btn-section {
+    display: flex;
+    justify-content: center;
+}
+/* need to get my buttons up in my page! ask for help */
+#btn {
+    border: 2px solid black;
+}
+
