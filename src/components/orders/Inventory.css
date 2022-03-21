@@ -1,0 +1,11 @@
+.form-img1 .form-img2 .form-img3 .form-img4{
+    display: flex;
+    flex-direction: row;
+}
+
+#img-inventory{
+    /* flex-direction: row; */
+     /* width: 20em ; */
+    /* height: 15em; */
+    margin: 2em
+}

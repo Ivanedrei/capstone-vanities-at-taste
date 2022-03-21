@@ -24,6 +24,10 @@ export const getAllSizes = () => {
     return fetch(`${remoteURL}/dimensions`)
         .then(res => res.json())
 }
+export const getAllCustomOrder = () => {
+    return fetch(`${remoteURL}/customOrders`)
+        .then(res => res.json())
+}
 export const addSizes = (newDimension) => {
     return fetch(`${remoteURL}/dimensions`, {
         method: "POST",

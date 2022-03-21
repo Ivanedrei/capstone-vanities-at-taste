@@ -148,7 +148,7 @@
       "price": 0
     }
   ],
-  "customOrder": [
+  "customOrders": [
     {
       "id": 1,
       "styleId": 0,
@@ -157,7 +157,6 @@
       "countertopId": 0,
       "hardwareId": 0,
       "sizeId": 0,
-      "timestamp": 0,
       "purchaseId": 0
     }
   ],
@@ -167,261 +166,14 @@
       "width": 48,
       "height": 36,
       "deep": 20
-    },
-    [
-      {
-        "id": 1,
-        "width": 48,
-        "height": 36,
-        "deep": 20
-      }
-    ],
-    [
-      {
-        "id": 1,
-        "width": 48,
-        "height": 36,
-        "deep": 20
-      },
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        }
-      ]
-    ],
-    [
-      {
-        "id": 1,
-        "width": 48,
-        "height": 36,
-        "deep": 20
-      },
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        }
-      ],
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        },
-        [
-          {
-            "id": 1,
-            "width": 48,
-            "height": 36,
-            "deep": 20
-          }
-        ]
-      ]
-    ],
-    [
-      {
-        "id": 1,
-        "width": 48,
-        "height": 36,
-        "deep": 20
-      },
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        }
-      ],
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        },
-        [
-          {
-            "id": 1,
-            "width": 48,
-            "height": 36,
-            "deep": 20
-          }
-        ]
-      ],
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        },
-        [
-          {
-            "id": 1,
-            "width": 48,
-            "height": 36,
-            "deep": 20
-          }
-        ],
-        [
-          {
-            "id": 1,
-            "width": 48,
-            "height": 36,
-            "deep": 20
-          },
-          [
-            {
-              "id": 1,
-              "width": 48,
-              "height": 36,
-              "deep": 20
-            }
-          ]
-        ]
-      ]
-    ],
-    [
-      {
-        "id": 1,
-        "width": 48,
-        "height": 36,
-        "deep": 20
-      },
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        }
-      ],
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        },
-        [
-          {
-            "id": 1,
-            "width": 48,
-            "height": 36,
-            "deep": 20
-          }
-        ]
-      ],
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        },
-        [
-          {
-            "id": 1,
-            "width": 48,
-            "height": 36,
-            "deep": 20
-          }
-        ],
-        [
-          {
-            "id": 1,
-            "width": 48,
-            "height": 36,
-            "deep": 20
-          },
-          [
-            {
-              "id": 1,
-              "width": 48,
-              "height": 36,
-              "deep": 20
-            }
-          ]
-        ]
-      ],
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        },
-        [
-          {
-            "id": 1,
-            "width": 48,
-            "height": 36,
-            "deep": 20
-          }
-        ],
-        [
-          {
-            "id": 1,
-            "width": 48,
-            "height": 36,
-            "deep": 20
-          },
-          [
-            {
-              "id": 1,
-              "width": 48,
-              "height": 36,
-              "deep": 20
-            }
-          ]
-        ],
-        [
-          {
-            "id": 1,
-            "width": 48,
-            "height": 36,
-            "deep": 20
-          },
-          [
-            {
-              "id": 1,
-              "width": 48,
-              "height": 36,
-              "deep": 20
-            }
-          ],
-          [
-            {
-              "id": 1,
-              "width": 48,
-              "height": 36,
-              "deep": 20
-            },
-            [
-              {
-                "id": 1,
-                "width": 48,
-                "height": 36,
-                "deep": 20
-              }
-            ]
-          ]
-        ]
-      ]
-    ]
+    }
   ],
-  "purchase": [
+  "purchases": [
     {
       "id": 1,
       "userId": 0,
-      "timestamp": ""
+      "timestamp": 1614659931693,
+      "totalPrice": 0
     }
   ],
   "inventory": [
