@@ -5,14 +5,18 @@ import "./ViewOrders.css"
 import { getAllCustomOrder } from "../../modules/CustomOrderManager";
 
 export const ViewOrders = () => {
+
     const [inventory, setInventory] = useState([]);
-    const [customOrder, setCustomOrder] = useState([]);
+
+    const [customOrders, setCustomOrders] = useState([]);
+
     const [purchases, setPurchases] = useState({
         id: 0,
         userId: 0,
         timestamp: 1614659931693,
         totalPrice: 0
     })
+
 
 
     useEffect(() => {
@@ -32,7 +36,7 @@ export const ViewOrders = () => {
     useEffect(() => {
         getAllCustomOrder()
             .then((newPurchase) => {
-                setPurchases(newPurchase);
+                setCustomOrders(newPurchase);
             });
     }, []);
 
@@ -42,16 +46,19 @@ export const ViewOrders = () => {
             <section>
                 <div>
                     <h3>Custom Orders</h3>
-                    <div>
-                        <img>{purchase.imgURL}</img>
-                        <p>{purchase.id} {purchase.timestamp}</p>
+                    {/* customOrder.map(purchase => ) */}
+                    <div> {customOrders.map(customOrder => <>
+                        <img src={customOrder.imgURL}></img>
+                        <p>{customOrder.styleId} {customOrder.timestamp} {customOrder.price}</p> </>
+                    )}
                     </div>
                 </div>
                 <div>
                     <h3>Inventory Orders</h3>
-                    <div>
-                        <img>{purchase.imgURL}</img>
-                        <p>{purchase.id} {purchase.timestamp}</p>
+                    {/* inventory.map(purchase => ) */}
+                    <div> {inventory.map(invent => <>
+                        <img>{invent.imgURL}</img>
+                        <p>{invent.id} {invent.timestamp}</p> </>)}
                     </div>
                 </div>
 

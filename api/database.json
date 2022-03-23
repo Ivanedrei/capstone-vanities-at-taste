@@ -158,6 +158,16 @@
       "hardwareId": 0,
       "sizeId": 0,
       "purchaseId": 0
+    },
+    {
+      "id": 2,
+      "styleId": 1,
+      "woodId": 2,
+      "colorId": 3,
+      "countertopId": 2,
+      "hardwareId": 4,
+      "sizeId": 1,
+      "purchaseId": 1
     }
   ],
   "dimensions": [
@@ -166,12 +176,20 @@
       "width": 48,
       "height": 36,
       "deep": 20
-    }
+    },
+    [
+      {
+        "id": 1,
+        "width": 48,
+        "height": 36,
+        "deep": 20
+      }
+    ]
   ],
   "purchases": [
     {
       "id": 1,
-      "userId": 0,
+      "userId": 1,
       "timestamp": 1614659931693,
       "totalPrice": 0
     }
@@ -179,11 +197,75 @@
   "inventory": [
     {
       "id": 1,
-      "styleId": 0,
-      "imgUrl": "",
-      "price": 0,
-      "purchaseId": 0,
-      "ifNotPurchaseId": 0
+      "styleId": 1,
+      "imgUrl": "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0908/benchwright-72-double-sink-vanity-2-o.jpg",
+      "price": 2000
+    },
+    {
+      "id": 2,
+      "styleId": 1,
+      "imgUrl": "https://www.sprucdmarket.com/wp-content/uploads/2018/08/36473173_488420491616469_7893135448837455872_n.jpg",
+      "price": 1500
+    },
+    {
+      "id": 3,
+      "styleId": 1,
+      "imgUrl": "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202209/1393/abbott-68-double-sink-vanity-o.jpg",
+      "price": 1800
+    },
+    {
+      "id": 4,
+      "styleId": 2,
+      "imgUrl": "https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2018/6/26/1/FOD18_Jennifer-Mehditash_Lido-House_017.jpg.rend.hgtvcom.616.822.suffix/1530037866072.jpeg",
+      "price": 2400
+    },
+    {
+      "id": 5,
+      "styleId": 2,
+      "imgUrl": "https://secure.img1-fg.wfcdn.com/im/75625293/resize-h445%5Ecompr-r85/1444/144470601/Braylen+Sliding+Barn+Door+49%2522+Single+Bathroom+Vanity+Set.jpg",
+      "price": 1400
+    },
+    {
+      "id": 6,
+      "styleId": 2,
+      "imgUrl": "https://cdn.shopify.com/s/files/1/0603/8845/products/charlotte-72-double-farmhouse-vanity-white-quartz-top-1_2048x.jpg?v=1637770574",
+      "price": 2200
+    },
+    {
+      "id": 7,
+      "styleId": 3,
+      "imgUrl": "https://cdn.trendir.com/wp-content/uploads/old/archives/2015/11/27/3-classic-italian-bathroom-vanities-chic-style-aida.jpg",
+      "price": 3200
+    },
+    {
+      "id": 8,
+      "styleId": 3,
+      "imgUrl": "https://cdn.trendir.com/wp-content/uploads/old/archives/2015/11/27/13-classic-italian-bathroom-vanities-chic-style-otello.jpg",
+      "price": 3600
+    },
+    {
+      "id": 9,
+      "styleId": 3,
+      "imgUrl": "https://cdn.trendir.com/wp-content/uploads/old/archives/2015/11/27/15-classic-italian-bathroom-vanities-chic-style-tosca.jpg",
+      "price": 3400
+    },
+    {
+      "id": 10,
+      "styleId": 4,
+      "imgUrl": "https://www.rawsunshinecoast.com.au/wp-content/uploads/2018/07/vanity-1-1.jpg",
+      "price": 2300
+    },
+    {
+      "id": 11,
+      "styleId": 4,
+      "imgUrl": "https://img1.homary.com/mall/file/2021/06/03/5039b555998f461b9f99ff9a7fc2f318.jpg",
+      "price": 1800
+    },
+    {
+      "id": 12,
+      "styleId": 4,
+      "imgUrl": "https://img1.homary.com/mall/file/2021/10/29/cfa3cbd8accc4d8fae5ea93054d34fb5.jpg",
+      "price": 2800
     }
   ],
   "contact": [
