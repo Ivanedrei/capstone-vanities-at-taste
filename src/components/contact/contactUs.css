@@ -1,0 +1,33 @@
+.background {
+background-image: url(https://media.architecturaldigest.com/photos/57559dae69bcf60b7b8646e1/master/w_2580%2Cc_limit/0716-shawn-henderson-aspen-house-9.jpg);
+background-size: contain;
+background-position: center center !important;
+background-repeat: no-repeat;
+background-color:black;
+/* background-attachment: scroll; */
+}
+
+.flex_form {
+padding-top: 15em;
+}
+
+.header_contact {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#text {
+    font-size: 16px;
+    color: black;
+    background-color: rgb(221, 208, 173);
+    border: 1px solid black;
+    padding: 2px;
+    margin-right: 20px;
+    /* font-weight: bold; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#name, #email, #description{
+    border: 1px solid black;
+}

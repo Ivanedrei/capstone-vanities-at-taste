@@ -19,3 +19,10 @@ button {
     border-radius: 15px;
     margin-top: 30em;
 }
+
+.background {
+    background-image: url(https://media.architecturaldigest.com/photos/5727c593c8914cdb3ed26299/master/w_2580%2Cc_limit/AD-0616-NETTO-10.jpg);
+    /* max-width: 536px; */
+    max-height: 882px;
+    padding: 0px;
+}

@@ -44,30 +44,33 @@ export const ContactUs = () => {
 
     return (
         <>
-            <h2>Contact Us:</h2>
-
-            <form className="flex_form">
-                <div className="form-group">
-                    <label htmlFor="name">First Name:</label>
-                    <input type="text" id="name" onChange={SaveInputValue} required autoFocus className="form-control" placeholder="John Smith" value={user.firstName} />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="name">Last Name:</label>
-                    <input type="text" id="name" onChange={SaveInputValue} required autoFocus className="form-control" placeholder="John Smith" value={user.lastName} />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="name">Email:</label>
-                    <input type="text" id="email" onChange={SaveInputValue} required autoFocus className="form-control" placeholder="Johnsmith@me.com" value={user.email} />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="name">Description:</label>
-                    <textarea type="text" id="description" onChange={SaveInputValue} required autoFocus className="form-control" value="" />
-                </div>
-                <button className="btn btn-primary"
-                    onClick={handleClickSummit}>
-                    Summit
-                </button>
-            </form>
+            <div className="header_contact">
+                <h1>Contact Us:</h1>
+            </div>
+            <div className="background">
+                <form className="flex_form" >
+                    <div className="form-group">
+                        <label htmlFor="name" id="text">First Name:</label>
+                        <input type="text" id="name" onChange={SaveInputValue} required autoFocus className="form-control" placeholder="John Smith" value={user.firstName} />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="name" id="text">Last Name:</label>
+                        <input type="text" id="name" onChange={SaveInputValue} required autoFocus className="form-control" placeholder="John Smith" value={user.lastName} />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="name" id="text">Email:</label>
+                        <input type="text" id="email" onChange={SaveInputValue} required autoFocus className="form-control" placeholder="Johnsmith@me.com" value={user.email} />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="name" id="text">Description:</label>
+                        <textarea type="text" id="description" onChange={SaveInputValue} required autoFocus className="form-control" value="" />
+                    </div>
+                    <button className="btn btn-primary"
+                        onClick={handleClickSummit}>
+                        Summit
+                    </button>
+                </form>
+            </div>
         </>
     )
 }
