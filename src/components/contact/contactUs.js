@@ -63,7 +63,7 @@ export const ContactUs = () => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="name" id="text">Description:</label>
-                        <textarea type="text" id="description" onChange={SaveInputValue} required autoFocus className="form-control" value="" />
+                        <textarea type="text" id="description" onChange={SaveInputValue} className="form-control" value="" />
                     </div>
                     <button className="btn btn-primary"
                         onClick={handleClickSummit}>

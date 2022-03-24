@@ -89,8 +89,8 @@ export const CustomOrderForm = () => {
     return (
         <>
             {/* <img> </img> */}
-            <h1> Custom Order</h1>
-            <h4>Est. Delivery: May 2022</h4>
+            <h1 className="custom_header"> Custom Order</h1>
+            <h4 className="deliveryDate">Est. Delivery: May 2022</h4>
             <form className="custom_form">
                 <fieldset>
                     <div className="form-group">

@@ -5,20 +5,21 @@ export const AboutUs = () => {
     return (
         <>
             {/* <img></img> */}
-            <h1>About Us:</h1>
+            <h1 className="about_header">About Us:</h1>
 
-            <h2>
+            <h2 className="about_title">
                 Who we are:
             </h2>
-            <p>
+            <p id="paragraph">
                 After many years and generations of carpentry,
                 we are the 4th generation who are making a difference in these modern days.
                 As a team of high experienced artisanal carpenters,
                 we offer the best quality to our community and far more...
             </p>
-            <h2>Why choose us ?
+            <h2 className="about_title">
+                Why choose us ?
             </h2>
-            <p>
+            <p id="paragraph">
                 As a step up in Tech.we offer Custom Vanities for anyone who is looking a for
                 unique look for their remodeling home projects, instead of the boring same feel of cabinets.
                 We want our customers to enjoy their homes at their taste,

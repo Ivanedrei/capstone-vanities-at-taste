@@ -1,13 +1,13 @@
-h1{
+.about_header{
     margin: 3em 0em 6em;
 }
 
-h2 {
+.about_title {
 text-align: center;
 margin: 3em;
 }
 
-p {
+#paragraph {
     font-size: 18px;
     padding: 0em 10em;
 }

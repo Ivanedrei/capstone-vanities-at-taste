@@ -12,9 +12,10 @@ padding-top: 15em;
 }
 
 .header_contact {
-    margin: 0px;
+    margin: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 
 #text {

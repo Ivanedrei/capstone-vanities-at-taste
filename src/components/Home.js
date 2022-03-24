@@ -14,8 +14,8 @@ export const Home = () => {
                 setAuthUser={setAuthUser}
                 isAuthenticated={isAuthenticated}
                 setIsAuthenticated={setIsAuthenticated} /> */}
-            <section className="background">
-                <div className="title" >
+            <section className="background_home">
+                <div className="home_title" >
                     <h2>Vanities at Taste</h2>
                 </div>
                 <div className="container_home">

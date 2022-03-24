@@ -1,9 +1,9 @@
-h1 {
+.custom_header {
     font-size: 30px;
     text-align: center;
 }
 
-h4 {
+.deliveryDate {
     text-align: center;
 }
 
