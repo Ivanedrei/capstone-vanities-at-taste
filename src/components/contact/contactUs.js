@@ -65,7 +65,7 @@ export const ContactUs = () => {
                         <label htmlFor="name" id="text">Description:</label>
                         <textarea type="text" id="description" onChange={SaveInputValue} className="form-control" value="" />
                     </div>
-                    <button className="btn btn-primary"
+                    <button className="contact_btn"
                         onClick={handleClickSummit}>
                         Summit
                     </button>

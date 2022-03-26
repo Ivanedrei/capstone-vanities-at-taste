@@ -93,7 +93,7 @@ export const CustomOrderForm = () => {
             <h4 className="deliveryDate">Est. Delivery: May 2022</h4>
             <form className="custom_form">
                 <fieldset>
-                    <div className="form-group">
+                    <div className="custom_form-group">
                         <label htmlFor="style" className="category">Style: </label>
                         <select value={style.Id} name="styleId" id="styleId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
@@ -106,7 +106,7 @@ export const CustomOrderForm = () => {
                     </div>
                 </fieldset>
                 <fieldset>
-                    <div className="form-group">
+                    <div className="custom_form-group">
                         <label htmlFor="wood" className="category">Wood: </label>
                         <select value={wood.Id} name="woodId" id="woodId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
@@ -119,7 +119,7 @@ export const CustomOrderForm = () => {
                     </div>
                 </fieldset>
                 <fieldset>
-                    <div className="form-group">
+                    <div className="custom_form-group">
                         <label htmlFor="color" className="category">Color: </label>
                         <select value={color.Id} name="colorId" id="colorId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
@@ -132,7 +132,7 @@ export const CustomOrderForm = () => {
                     </div>
                 </fieldset>
                 <fieldset>
-                    <div className="form-group">
+                    <div className="custom_form-group">
                         <label htmlFor="countertop" className="category">Countertop: </label>
                         <select value={countertop.Id} name="countertopId" id="countertopId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
@@ -145,7 +145,7 @@ export const CustomOrderForm = () => {
                     </div>
                 </fieldset>
                 <fieldset>
-                    <div className="form-group">
+                    <div className="custom_form-group">
                         <label htmlFor="hardware" className="category">Hardware: </label>
                         <select value={hardware.Id} name="hardwareId" id="hardwareId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
@@ -159,7 +159,7 @@ export const CustomOrderForm = () => {
                 </fieldset>
                 {/* left off here: edit this code as in tesla.com for orders input*/}
                 {/* <fieldset>
-                    <div className="form-group">
+                    <div className="custom_form-group">
                         <input htmlFor="hardware">Hardware: </input>
                         <label value={hardware.Id} name="hardwareId" id="hardwareId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
@@ -172,7 +172,7 @@ export const CustomOrderForm = () => {
                     </div>
                 </fieldset> */}
                 <fieldset>
-                    <div className="form-group">
+                    <div className="custom_form-group">
                         {/* htmlFor and Id inside input shoiuld both match to work! */}
                         <label htmlFor="size" className="category">Dimensions:</label> <br />
                         <input type="text" id="size" onChange={handleControlledInputChange} className="form-control" placeholder="width in inches" value={sizes.width} /> <br />

@@ -1,13 +1,65 @@
-.about_header{
-    margin: 3em 0em 6em;
-}
-
 .about_title {
 text-align: center;
-margin: 3em;
+margin: 5em 0em 1em 0em;
+color: brown;
+font-family: impact;
+font-size: 28px;
 }
 
 #paragraph {
-    font-size: 18px;
-    padding: 0em 10em;
+    font-size: 20px;
+    padding: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background:
+    linear-gradient( white, transparent),
+    linear-gradient(to top left, rgb(189, 189, 189), transparent),
+    linear-gradient(to top right, rgb(160, 160, 160), transparent);
+}
+
+.about_img {
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid black;
+    border-bottom: 2px solid black;
+    background:
+        linear-gradient(rgb(25, 115, 199), transparent),
+        linear-gradient(to top left, white, transparent),
+        linear-gradient(to top right, white, transparent);
+}
+
+.about_background {
+     /* Set rules to fill background */
+    flex-wrap: wrap;
+    width: 80%;
+    height: 440px;
+   position: relative;
+   text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    font-style: italic;
+    mix-blend-mode:screen;
+    background-color:ghostwhite;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.about_p1 {
+    margin: 0em 20em 5em 20em;
+    border: 2px dotted black;
+    border-bottom: 3px solid black;
+}
+
+.about_p2 {
+    margin: 0em 20em 10em 20em;
+    border: 2px dotted black;
+    border-bottom: 3px solid black;
+
 }

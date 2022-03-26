@@ -7,7 +7,7 @@ export const Checkout = () => {
     return (
         <>
             <div className="paragraph">
-                <p>Thank you for your purchase!
+                <p className="checkout_p">Thank you for your purchase!
                     You've made an order of { } item/s.</p>
                 <p>We'll see you soon!</p>
             </div>
