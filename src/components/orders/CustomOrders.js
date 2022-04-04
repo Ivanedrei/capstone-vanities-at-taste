@@ -6,7 +6,7 @@ import './CustomOrders.css'
 export const CustomOrderForm = () => {
 
     const [wood, setWood] = useState([]);
-    const [style, setStyle] = useState([]);
+    const [styles, setStyles] = useState([]);
     const [color, setColor] = useState([]);
     const [countertop, setCountertop] = useState([]);
     const [hardware, setHardware] = useState([]);
@@ -41,7 +41,7 @@ export const CustomOrderForm = () => {
     useEffect(() => {
         getAllStyles()
             .then((newStyle) => {
-                setStyle(newStyle);
+                setStyles(newStyle);
                 // setIsLoading(false);
             });
     }, []);
@@ -78,7 +78,7 @@ export const CustomOrderForm = () => {
     const handleClickSummit = (event) => {
         event.preventDefault()
 
-        if (wood.Id === 0 || style.Id === 0 || color.Id === 0 ||
+        if (wood.Id === 0 || styles.Id === 0 || color.Id === 0 ||
             countertop.Id === 0 || hardware.Id === 0 || size.Id === 0) {
             window.alert("Please fill out all inputs")
         } else {
@@ -86,6 +86,10 @@ export const CustomOrderForm = () => {
                 .then(() => navigate("/checkout"))
         }
     }
+
+    const sumOfPrices = () => {
+    }
+
     return (
         <>
             {/* <img> </img> */}
@@ -95,11 +99,11 @@ export const CustomOrderForm = () => {
                 <fieldset>
                     <div className="custom_form-group">
                         <label htmlFor="style" className="category">Style: </label>
-                        <select value={style.Id} name="styleId" id="styleId" onChange={handleControlledInputChange} className="form-control" >
+                        <select value={styles.Id} name="styleId" id="styleId" onChange={handleControlledInputChange} className="form-control" >
                             <option value="0"> Select one</option>
-                            {style.map(style => (
+                            {styles.map(style => (
                                 <option key={style.id} value={style.id}>
-                                    {style.name}
+                                    {style.name} ${style.price}
                                 </option>
                             ))}
                         </select>
@@ -112,7 +116,7 @@ export const CustomOrderForm = () => {
                             <option value="0"> Select one</option>
                             {wood.map(wood => (
                                 <option key={wood.id} value={wood.id}>
-                                    {wood.name}
+                                    {wood.name} +${wood.price}
                                 </option>
                             ))}
                         </select>
@@ -125,7 +129,7 @@ export const CustomOrderForm = () => {
                             <option value="0"> Select one</option>
                             {color.map(color => (
                                 <option key={color.id} value={color.id}>
-                                    {color.name}
+                                    {color.name} +${color.price}
                                 </option>
                             ))}
                         </select>
@@ -138,7 +142,7 @@ export const CustomOrderForm = () => {
                             <option value="0"> Select one</option>
                             {countertop.map(countertop => (
                                 <option key={countertop.id} value={countertop.id}>
-                                    {countertop.name}
+                                    {countertop.name} +${countertop.price}
                                 </option>
                             ))}
                         </select>
@@ -151,7 +155,7 @@ export const CustomOrderForm = () => {
                             <option value="0"> Select one</option>
                             {hardware.map(hardware => (
                                 <option key={hardware.id} value={hardware.id}>
-                                    {hardware.name}
+                                    {hardware.name} +${hardware.price}
                                 </option>
                             ))}
                         </select>
@@ -180,10 +184,15 @@ export const CustomOrderForm = () => {
                         <input type="text" id="size" onChange={handleControlledInputChange} className="form-control" placeholder="depth in inches" value={sizes.deep} />
                     </div>
                 </fieldset>
-                <button className="btn btn-primary"
-                    onClick={handleClickSummit}>
-                    Summit
-                </button>
+                <div>
+                    <p className="custom_totalPrice">
+                        Total price:${sumOfPrices}
+                    </p>
+                    <button className="custom_btn"
+                        onClick={handleClickSummit}>
+                        Submit
+                    </button>
+                </div>
             </form>
         </>
     )

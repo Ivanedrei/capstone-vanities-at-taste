@@ -9,11 +9,17 @@ export const getAllUsers = () => {
         .then(res => res.json())
 }
 export const addOrders = (neworder) => {
-    return fetch(`${remoteURL}/inventory`, {
+    return fetch(`${remoteURL}/purchases`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(neworder)
     }).then(response => response.json())
+}
+
+export const getInventoryById = (inventoryId) => {
+    //be sure your animals have good data and related to a location and customer
+    return fetch(`${remoteURL}/inventory/${inventoryId}?_expand=style`)
+        .then(res => res.json())
 }

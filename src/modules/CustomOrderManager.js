@@ -1,7 +1,7 @@
 const remoteURL = "http://localhost:8088"
 
 export const getAllStyles = () => {
-    return fetch(`${remoteURL}/style`)
+    return fetch(`${remoteURL}/styles`)
         .then(res => res.json())
 }
 export const getAllWood = () => {
