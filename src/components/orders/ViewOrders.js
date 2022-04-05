@@ -42,7 +42,7 @@ export const ViewOrders = () => {
             <section>
                 <div>
                     <h3>Custom Orders</h3>
-                    <div>
+                    {/* <div>
                         <img>{purchase.imgURL}</img>
                         <p>{purchase.id} {purchase.timestamp}</p>
                     </div>
@@ -52,7 +52,7 @@ export const ViewOrders = () => {
                     <div>
                         <img>{purchase.imgURL}</img>
                         <p>{purchase.id} {purchase.timestamp}</p>
-                    </div>
+                    </div> */}
                 </div>
 
             </section>

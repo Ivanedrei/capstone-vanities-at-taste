@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useParams, useNavigate } from 'react-router-dom';
-import { addOrders, getAllInventory, getInventoryById } from "../../modules/InventoryManager";
+import { addOrders, getAllInventory, getInventoryById } from "../../../modules/InventoryManager";
 import "./Inventory.css"
 import { InventoryCard } from "./InventoryCard";
 
