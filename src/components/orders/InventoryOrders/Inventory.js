@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { useParams, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { addOrders, getAllInventory } from "../../../modules/InventoryManager";
 
 import "./Inventory.css"
@@ -9,7 +9,7 @@ export const Inventory = () => {
     //[] inside useState creates a list; while {} creates a new object to store in database.
     const [inventory, setInventory] = useState([])
     const [isLoading, setIsLoading] = useState(true);
-    const { inventoryId } = useParams();
+    // const { inventoryId } = useParams();
 
     const updateSelectInventory = (evt, inventoryId) => {
         evt.preventDefault()
@@ -37,13 +37,13 @@ export const Inventory = () => {
     //         });
     // }, []);
 
-    useEffect(() => {
-        getAllInventory()
-            .then((newinventory) => {
-                setInventory(newinventory);
-                setIsLoading(false);
-            });
-    }, []);
+    // useEffect(() => {
+    //     getAllInventory()
+    //         .then((newinventory) => {
+    //             setInventory(newinventory);
+    //             setIsLoading(false);
+    //         });
+    // }, []);
 
     // console.log(inventory[0].id)
 

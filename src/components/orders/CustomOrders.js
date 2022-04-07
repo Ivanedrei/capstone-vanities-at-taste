@@ -12,7 +12,6 @@ export const CustomOrderForm = () => {
     const [hardware, setHardware] = useState([]);
     const [size, setSize] = useState([]);
     const [sizes, setSizes] = useState([
-
     ]);
 
     // const [isLoading, setIsLoading] = useState(false);

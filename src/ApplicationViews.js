@@ -4,7 +4,7 @@ import { Home } from "./components/Home"
 import { ContactUs } from "./components/contact/ContactUs"
 import { CustomOrderForm } from "./components/orders/CustomOrders"
 import { AboutUs } from "./components/about/AboutUs"
-import { Inventory } from "./components/orders/Inventory"
+import { Inventory } from "./components/orders/InventoryOrders/Inventory"
 import { Checkout } from "./components/orders/Checkout"
 import { ViewOrders } from "./components/orders/ViewOrders"
 

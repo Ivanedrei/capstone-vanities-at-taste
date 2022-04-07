@@ -1,12 +1,12 @@
-import React from "react"
+// import React from "react"
 
-export const InventoryCard = ({ product }) => {
-    console.log(product);
-    return (
-        <>
-            <div>
+// export const InventoryCard = ({ product }) => {
+//     console.log(product);
+//     return (
+//         <>
+//             <div>
 
-            </div>
-        </>
-    )
-};
+//             </div>
+//         </>
+//     )
+// };
