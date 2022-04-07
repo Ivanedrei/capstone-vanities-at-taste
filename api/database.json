@@ -8,147 +8,147 @@
       "password": "password"
     }
   ],
-  "style": [
+  "styles": [
     {
       "id": 1,
       "name": "rustic",
-      "price": 100
+      "price": 1000
     },
     {
       "id": 2,
       "name": "farm",
-      "price": 100
+      "price": 800
     },
     {
       "id": 3,
       "name": "classic",
-      "price": 100
+      "price": 900
     },
     {
       "id": 4,
       "name": "Modern",
-      "price": 100
+      "price": 700
     }
   ],
   "wood": [
     {
       "id": 1,
       "name": "Maple",
-      "price": 0
+      "price": 100
     },
     {
       "id": 2,
       "name": "Cedar",
-      "price": 0
+      "price": 150
     },
     {
       "id": 3,
       "name": "Cherry Wood",
-      "price": 0
+      "price": 200
     },
     {
       "id": 4,
       "name": "White Pine",
-      "price": 0
+      "price": 50
     },
     {
       "id": 5,
       "name": "Barn Wood",
-      "price": 0
+      "price": 250
     },
     {
       "id": 6,
       "name": "Exotic Wood",
-      "price": 0
+      "price": 300
     }
   ],
   "color": [
     {
       "id": 1,
       "name": "Pacer White",
-      "price": 0
+      "price": 100
     },
     {
       "id": 2,
       "name": "Gray",
-      "price": 0
+      "price": 150
     },
     {
       "id": 3,
       "name": "Blue",
-      "price": 0
+      "price": 200
     },
     {
       "id": 4,
       "name": "light stain",
-      "price": 0
+      "price": 200
     },
     {
       "id": 5,
       "name": "dark stain",
-      "price": 0
+      "price": 200
     },
     {
       "id": 6,
       "name": "dark red/browm stain",
-      "price": 0
+      "price": 250
     }
   ],
   "countertop": [
     {
       "id": 1,
       "name": "Stone",
-      "price": 0
+      "price": 400
     },
     {
       "id": 2,
       "name": "Concrete",
-      "price": 0
+      "price": 800
     },
     {
       "id": 3,
       "name": "Wooden",
-      "price": 0
+      "price": 350
     },
     {
       "id": 4,
       "name": "Corian",
-      "price": 0
+      "price": 250
     }
   ],
   "hardware": [
     {
       "id": 1,
       "name": "black knobs",
-      "price": 0
+      "price": 80
     },
     {
       "id": 2,
       "name": "chrome handles",
-      "price": 0
+      "price": 100
     },
     {
       "id": 3,
       "name": "brushed nickel handles",
-      "price": 0
+      "price": 130
     },
     {
       "id": 4,
       "name": "golden handles",
-      "price": 0
+      "price": 150
     },
     {
       "id": 5,
       "name": "oil-rubbed bronze knobs",
-      "price": 0
+      "price": 150
     },
     {
       "id": 6,
       "name": "oil-rubbed bronze handles",
-      "price": 0
+      "price": 180
     }
   ],
-  "customOrder": [
+  "customOrders": [
     {
       "id": 1,
       "styleId": 0,
@@ -157,7 +157,6 @@
       "countertopId": 0,
       "hardwareId": 0,
       "sizeId": 0,
-      "timestamp": 0,
       "purchaseId": 0
     }
   ],
@@ -193,21 +192,86 @@
       ]
     ]
   ],
-  "purchase": [
+  "purchases": [
     {
       "id": 1,
       "userId": 0,
-      "timestamp": ""
+      "timestamp": 1614659931693,
+      "totalPrice": 0
     }
   ],
   "inventory": [
     {
       "id": 1,
-      "styleId": 0,
-      "imgUrl": "",
-      "price": 0,
-      "purchaseId": 0,
-      "ifNotPurchaseId": 0
+      "styleId": 1,
+      "imgUrl": "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0908/benchwright-72-double-sink-vanity-2-o.jpg",
+      "price": 2000
+    },
+    {
+      "id": 2,
+      "styleId": 1,
+      "imgUrl": "https://www.sprucdmarket.com/wp-content/uploads/2018/08/36473173_488420491616469_7893135448837455872_n.jpg",
+      "price": 1500
+    },
+    {
+      "id": 3,
+      "styleId": 1,
+      "imgUrl": "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202209/1393/abbott-68-double-sink-vanity-o.jpg",
+      "price": 1800
+    },
+    {
+      "id": 4,
+      "styleId": 2,
+      "imgUrl": "https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2018/6/26/1/FOD18_Jennifer-Mehditash_Lido-House_017.jpg.rend.hgtvcom.616.822.suffix/1530037866072.jpeg",
+      "price": 2400
+    },
+    {
+      "id": 5,
+      "styleId": 2,
+      "imgUrl": "https://secure.img1-fg.wfcdn.com/im/75625293/resize-h445%5Ecompr-r85/1444/144470601/Braylen+Sliding+Barn+Door+49%2522+Single+Bathroom+Vanity+Set.jpg",
+      "price": 1400
+    },
+    {
+      "id": 6,
+      "styleId": 2,
+      "imgUrl": "https://cdn.shopify.com/s/files/1/0603/8845/products/charlotte-72-double-farmhouse-vanity-white-quartz-top-1_2048x.jpg?v=1637770574",
+      "price": 2200
+    },
+    {
+      "id": 7,
+      "styleId": 3,
+      "imgUrl": "https://cdn.trendir.com/wp-content/uploads/old/archives/2015/11/27/3-classic-italian-bathroom-vanities-chic-style-aida.jpg",
+      "price": 3200
+    },
+    {
+      "id": 8,
+      "styleId": 3,
+      "imgUrl": "https://cdn.trendir.com/wp-content/uploads/old/archives/2015/11/27/13-classic-italian-bathroom-vanities-chic-style-otello.jpg",
+      "price": 3600
+    },
+    {
+      "id": 9,
+      "styleId": 3,
+      "imgUrl": "https://cdn.trendir.com/wp-content/uploads/old/archives/2015/11/27/15-classic-italian-bathroom-vanities-chic-style-tosca.jpg",
+      "price": 3400
+    },
+    {
+      "id": 10,
+      "styleId": 4,
+      "imgUrl": "https://www.rawsunshinecoast.com.au/wp-content/uploads/2018/07/vanity-1-1.jpg",
+      "price": 2300
+    },
+    {
+      "id": 11,
+      "styleId": 4,
+      "imgUrl": "https://img1.homary.com/mall/file/2021/06/03/5039b555998f461b9f99ff9a7fc2f318.jpg",
+      "price": 1800
+    },
+    {
+      "id": 12,
+      "styleId": 4,
+      "imgUrl": "https://img1.homary.com/mall/file/2021/10/29/cfa3cbd8accc4d8fae5ea93054d34fb5.jpg",
+      "price": 2800
     }
   ],
   "contact": [
@@ -216,6 +280,14 @@
       "userId": 0,
       "message": "",
       "timestamp": ""
+    },
+    {
+      "id": 2,
+      "userId": 0,
+      "message": "",
+      "timestamp": "",
+      "name": "ramirez",
+      "email": "bwdvuy@yahoo.cpm"
     }
   ]
 }

@@ -2,9 +2,39 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
+    background-color: black;
+    max-height: 4em;
+    
 }
 
 .navbar__item {
-    flex-basis: 20%;
-    list-style-type: none;
+    margin:auto;
+    /* flex-basis: 15%; */
+    /* list-style-type: none; */
+}
+
+.logo{
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: -2px;
+    border: 2px solid white;
+    /* margin-bottom: -12.5px; */
+}
+
+.navbar__link{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
+    margin: 10px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }

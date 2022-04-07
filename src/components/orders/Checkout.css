@@ -1,0 +1,33 @@
+.checkout_background{
+    background-color: linen;
+    margin: 5em;
+    
+}
+
+.paragraph {
+    background-color: floralwhite;
+    margin: 5em 10em;
+    padding: 4em 8em;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 3%;
+}
+
+.btn-section {
+    display: flex;
+    justify-content: center;
+}
+/* need to get my buttons up in my page! ask for help */
+#btn {
+    font-size: 1em;
+    border: 2px solid black;
+    margin:4em 8em;
+    padding: 10px;
+    border-radius: 7%;
+    background-color: floralwhite;
+  
+}
+
