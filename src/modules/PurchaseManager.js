@@ -17,3 +17,9 @@ export const addOrders = (neworder) => {
         body: JSON.stringify(neworder)
     }).then(response => response.json())
 }
+
+export const deleteOrder = (id) => {
+    return fetch(`${remoteURL}/owners/${id}`, {
+        method: "DELETE"
+    }).then(result => result.json())
+}

@@ -22,7 +22,7 @@ export const Inventory = () => {
         };
 
         getAllInventory(selectInventory)
-            .then(() => alert("you have selected item #", { inventoryId })
+            .then(() => alert("you have selected an item!", { inventoryId })
             )
     }
 
@@ -69,7 +69,7 @@ export const Inventory = () => {
             <h1 className="inventory_title">Existing Inventory</h1>
             <section className="form-flex">
                 <div className="form-component">
-                    <h2 className="form-title">
+                    <h2 className="form-title" id="rustic">
                         Rustic
                     </h2>
                     <div htmlFor="img-inventory" className="form-img1">
@@ -106,7 +106,7 @@ export const Inventory = () => {
                         Classic
                     </h2>
                     <div id="img-inventory" className="form-img3">
-                        <img id="img-inventory3" className="img_1" src="https://cdn.trendir.com/wp-content/uploads/old/archives/2015/11/27/3-classic-italian-bathroom-vanities-chic-style-aida.jpg"
+                        <img id="img-inventory3" src="https://cdn.trendir.com/wp-content/uploads/old/archives/2015/11/27/3-classic-italian-bathroom-vanities-chic-style-aida.jpg"
                             alt="classic1" onClick={updateSelectInventory}></img>
                         <img id="img-inventory3" src="https://cdn.trendir.com/wp-content/uploads/old/archives/2015/11/27/13-classic-italian-bathroom-vanities-chic-style-otello.jpg"
                             alt="classic2" onClick={updateSelectInventory}></img>
