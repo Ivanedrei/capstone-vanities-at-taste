@@ -6,6 +6,16 @@
       "lastName": "Ramirez",
       "email": "me@me.com ",
       "password": "password"
+    },
+    {
+      "email": "me2@me.com",
+      "name": "w w",
+      "id": 2
+    },
+    {
+      "email": "me@me.com",
+      "name": "q q",
+      "id": 3
     }
   ],
   "styles": [
@@ -90,7 +100,7 @@
     },
     {
       "id": 6,
-      "name": "dark red/browm stain",
+      "name": "dark red/brown stain",
       "price": 250
     }
   ],
@@ -157,7 +167,8 @@
       "countertopId": 0,
       "hardwareId": 0,
       "sizeId": 0,
-      "purchaseId": 0
+      "purchased": false,
+      "totalPrice": 0
     }
   ],
   "dimensions": [
@@ -190,6 +201,38 @@
           "deep": 20
         }
       ]
+    ],
+    [
+      {
+        "id": 1,
+        "width": 48,
+        "height": 36,
+        "deep": 20
+      },
+      [
+        {
+          "id": 1,
+          "width": 48,
+          "height": 36,
+          "deep": 20
+        }
+      ],
+      [
+        {
+          "id": 1,
+          "width": 48,
+          "height": 36,
+          "deep": 20
+        },
+        [
+          {
+            "id": 1,
+            "width": 48,
+            "height": 36,
+            "deep": 20
+          }
+        ]
+      ]
     ]
   ],
   "purchases": [
@@ -197,7 +240,8 @@
       "id": 1,
       "userId": 0,
       "timestamp": 1614659931693,
-      "totalPrice": 0
+      "totalPrice": 0,
+      "inventoryId": 1
     }
   ],
   "inventory": [
@@ -265,7 +309,7 @@
       "id": 11,
       "styleId": 4,
       "imgUrl": "https://img1.homary.com/mall/file/2021/06/03/5039b555998f461b9f99ff9a7fc2f318.jpg",
-      "price": 1800
+      "price": 1850
     },
     {
       "id": 12,

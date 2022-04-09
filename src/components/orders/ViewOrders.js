@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react"
-import { getAllPurchases } from "../../modules/PurchaseManager";
+import { getAllPurchases, deleteOrder } from "../../modules/PurchaseManager";
 import { getAllInventory } from "../../modules/InventoryManager";
 import "./ViewOrders.css"
 import { getAllCustomOrder } from "../../modules/CustomOrderManager";
+import { PurchaseCards } from "./PurchaseCards";
 
 export const ViewOrders = () => {
     const [inventory, setInventory] = useState([]);
@@ -13,7 +14,6 @@ export const ViewOrders = () => {
         timestamp: 1614659931693,
         totalPrice: 0
     })
-
 
     useEffect(() => {
         getAllInventory()
@@ -36,23 +36,40 @@ export const ViewOrders = () => {
             });
     }, []);
 
+    const CustomOrder = () => {
+        if (customOrder.purchased === true) {
+            return customOrder.id
+        } else return null
+    };
+
+    const DeleteOrder = id => {
+        deleteOrder(id)
+            .then(() => getAllPurchases().then(setPurchases));
+    };
+
     return (
         <>
             <h1>My Orders</h1>
             <section>
                 <div>
                     <h3>Custom Orders</h3>
-                    {/* <div>
-                        <img>{purchase.imgURL}</img>
-                        <p>{purchase.id} {purchase.timestamp}</p>
+                    <div>
+                        {customOrder.map(c =>
+                            <PurchaseCards
+                                key={c.id}
+                                c={c}
+                                DeleteOrder={DeleteOrder} />)}
                     </div>
                 </div>
                 <div>
                     <h3>Inventory Orders</h3>
                     <div>
-                        <img>{purchase.imgURL}</img>
-                        <p>{purchase.id} {purchase.timestamp}</p>
-                    </div> */}
+                        {purchases.map(p =>
+                            <PurchaseCards
+                                key={p.id}
+                                p={p}
+                                DeleteOrder={DeleteOrder} />)}
+                    </div>
                 </div>
 
             </section>
