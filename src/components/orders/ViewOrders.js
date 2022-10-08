@@ -41,20 +41,11 @@ export const ViewOrders = () => {
             <h1>My Orders</h1>
             <section>
                 <div>
-                    <h3>Custom Orders</h3>
-                    {/* <div>
-                        <img>{purchase.imgURL}</img>
-                        <p>{purchase.id} {purchase.timestamp}</p>
-                    </div>
-                </div>
-                <div>
                     <h3>Inventory Orders</h3>
                     <div>
-                        <img>{purchase.imgURL}</img>
-                        <p>{purchase.id} {purchase.timestamp}</p>
-                    </div> */}
+                        {inventory.map(item => <img src={item.imgUrl} alt="img_order"></img>)}
+                    </div>
                 </div>
-
             </section>
         </>
     )

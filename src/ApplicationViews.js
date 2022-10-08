@@ -5,6 +5,7 @@ import { ContactUs } from "./components/contact/ContactUs"
 import { CustomOrderForm } from "./components/orders/CustomOrders"
 import { AboutUs } from "./components/about/AboutUs"
 import { Inventory } from "./components/orders/InventoryOrders/Inventory"
+import { InventoryItem } from "./components/orders/InventoryOrders/InventoryItem"
 import { Checkout } from "./components/orders/Checkout"
 import { ViewOrders } from "./components/orders/ViewOrders"
 
@@ -18,6 +19,7 @@ export const ApplicationViews = () => {
 
                 <Route path="/custom_order" element={<CustomOrderForm />} />
                 <Route path="/inventory_order" element={<Inventory />} />
+                <Route path="/inventory_item" element={<InventoryItem />} />
 
                 <Route path="/about" element={<AboutUs />} />
 
