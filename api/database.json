@@ -157,7 +157,8 @@
       "countertopId": 0,
       "hardwareId": 0,
       "sizeId": 0,
-      "purchaseId": 0
+      "purchaseId": 0,
+      "dimensionId": 0
     }
   ],
   "dimensions": [
@@ -166,31 +167,7 @@
       "width": 48,
       "height": 36,
       "deep": 20
-    },
-    [
-      {
-        "id": 1,
-        "width": 48,
-        "height": 36,
-        "deep": 20
-      }
-    ],
-    [
-      {
-        "id": 1,
-        "width": 48,
-        "height": 36,
-        "deep": 20
-      },
-      [
-        {
-          "id": 1,
-          "width": 48,
-          "height": 36,
-          "deep": 20
-        }
-      ]
-    ]
+    }
   ],
   "purchases": [
     {

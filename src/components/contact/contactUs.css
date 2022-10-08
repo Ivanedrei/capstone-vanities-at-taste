@@ -1,14 +1,14 @@
 .background {
-background-image: url(https://media.architecturaldigest.com/photos/57559dae69bcf60b7b8646e1/master/w_2580%2Cc_limit/0716-shawn-henderson-aspen-house-9.jpg);
-background-size: contain;
-background-position: center center !important;
-background-repeat: no-repeat;
-background-color:black;
-/* background-attachment: scroll; */
+    background-image: url(https://media.architecturaldigest.com/photos/57559dae69bcf60b7b8646e1/master/w_2580%2Cc_limit/0716-shawn-henderson-aspen-house-9.jpg);
+    background-size: contain;
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* background-attachment: scroll; */
 }
 
 .flex_form {
-padding: 18em 0em 30em 0em;
+    padding: 14em 0em 34em 31em;
 }
 
 .header_contact {
@@ -32,25 +32,27 @@ padding: 18em 0em 30em 0em;
     border-radius: 10%;
 }
 
-#name, #email, #description{
+#name,
+#email,
+#description {
     border: 1px solid black;
     border-radius: 5%;
 }
 
-.form-group{
- margin: 1.5em;
- display: flex;
- justify-content: center;
- font-size: 1.5em;
+.form-group {
+    margin: 1.5em;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
 }
 
 /* quik btn setup */
 .contact_btn {
-   margin: 4em 0em 0em 39em;
-   font-size: 18px;
-   padding: 1px 15px;
-   border-radius: 10%;
-   background-color: rgba(0, 191, 255, 0.842);
-   color: white;
-   border: 2px solid black;
+    margin: 0em 0em 0em 24em;
+    font-size: 18px;
+    padding: 1px 15px;
+    border-radius: 10%;
+    background-color: rgba(0, 191, 255, 0.842);
+    color: white;
+    border: 2px solid black;
 }
