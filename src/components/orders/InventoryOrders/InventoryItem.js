@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { useNavigate, useParams } from 'react-router-dom';
 import { getInventoryById } from "../../../modules/InventoryManager";
+import "./Inventory.css"
 
 export const InventoryItem = () => {
     const [item, setItem] = useState([])
@@ -17,51 +18,42 @@ export const InventoryItem = () => {
             });
     }, [inventoryId]);
 
-    //     const updateSelectInventory = (evt, id) => {
-    //         evt.preventDefault()
-    //         setIsLoading(true);
+    const addItem = () => {
 
-    //         const selectInventory = {
-    //             id: id,
-    //             styleId: inventory.styleId,
-    //             price: inventory.price
-    //         };
+    }
 
-    //         getAllInventory(selectInventory)
-    //             .then(() => alert(`you have selected item # ${inventory.id}`)
-    //             )
-    //     }
-
-    //     const handleClickSummit = (event) => {
-    //         event.preventDefault() //Prevents the browser from submitting the form
-
-    //         // need to fetch my images from database to get the id of each image
-    //         const orderSelected = event.target.id("img-inventory2")
-
-    //         if (orderSelected === null) {
-    //             window.alert("Please select an item")
-    //         } else {
-    //             addOrders(inventory)
-    //                 .then(() => navigate("/checkout"))
-    //         }
-    //     }
 
     return (
         <>
-            <h1 className="inventory_title">Existing Inventory</h1>
-            <section className="form-flex">
-                <div className="form-component">
-                    <h2 className="form-title">
-                        Rustic
-                    </h2>
-                </div>
-                <div id="btn_flex">
-                    <button className="inv_btn" disabled={isLoading}
-                    >
-                        Proceed to Checkout
-                    </button>
-                </div>
-            </section>
+            <div className="flex_parent">
+                {/* <h1 className="title_item">Rustic</h1> */}
+            </div>
+            <div className="flex_parent">
+                <img className="img_item" src="https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0908/benchwright-72-double-sink-vanity-2-o.jpg"
+                    alt="rustic1" ></img>
+                <section className="form-flex">
+                    <div className="form-component">
+                        {item.map(i => (
+                            <h2 className="form-title">
+                                {i.style}
+                            </h2>
+                        ))}
+                        <h2 className="form-title">
+                            Rustic name
+                        </h2>
+                        <p>
+                            details:
+
+                        </p>
+                    </div>
+                    <div id="btn_flex">
+                        <button className="inv_btn" disabled={isLoading}
+                            onClick={addItem}>
+                            Add to Cart
+                        </button>
+                    </div>
+                </section>
+            </div>
         </>
     )
 }
