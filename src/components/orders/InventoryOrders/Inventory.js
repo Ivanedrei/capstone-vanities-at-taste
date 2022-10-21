@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from "react"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { addOrders, getAllInventory, getInventoryById } from "../../../modules/InventoryManager";
 
 import "./Inventory.css"
 
 
-export const Inventory = ({ id }) => {
+export const Inventory = () => {
     //[] inside useState creates a list; while {} creates a new object to store in database.
     const [inventory, setInventory] = useState([])
     const [isLoading, setIsLoading] = useState(true);
-    // const { inventoryId } = useParams(); //where is it getting it from? InventoryManager??
+    const { inventoryId } = useParams(); //where is it getting it from? InventoryManager??
     const navigate = useNavigate()
 
     // try to retrieve object by id but i don't have the value passing to the invoked function getInventoryById
     useEffect(() => {
         //getInventoryById(inventoryId) //from inventoryManager and hang on to the data; put it into state
-        console.log("useEffect", id)
-        getInventoryById(id)
+        console.log("useEffect", inventoryId)
+        getInventoryById(inventoryId)
             .then(Inventory => {
                 setInventory(Inventory);
                 setIsLoading(false);
             });
-    }, [id]);
+    }, [inventoryId]);
 
     // useEffect(() => {
     //     getAllInventory()
@@ -33,12 +33,12 @@ export const Inventory = ({ id }) => {
 
     // console.log(inventory[0].id)
 
-    const updateSelectInventory = (evt, id) => {
+    const updateSelectInventory = (evt, inventoryId) => {
         evt.preventDefault()
         setIsLoading(true);
 
         const selectInventory = {
-            id: id,
+            id: inventoryId,
             styleId: inventory.styleId,
             price: inventory.price
         };

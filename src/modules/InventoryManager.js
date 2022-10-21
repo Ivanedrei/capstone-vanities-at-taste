@@ -18,7 +18,7 @@ export const addOrders = (neworder) => {
     }).then(response => response.json())
 }
 
-export const getInventoryById = (id) => {
-    return fetch(`${remoteURL}/inventory/${id}?_expand=style`)
+export const getInventoryById = (inventoryId) => {
+    return fetch(`${remoteURL}/inventory/${inventoryId}?_expand=style`)
         .then(res => res.json())
 }

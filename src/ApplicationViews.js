@@ -1,7 +1,7 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
 import { Home } from "./components/Home"
-import { ContactUs } from "./components/contact/ContactUs"
+// import { ContactUs } from "./components/contact/ContactUs"
 import { CustomOrderForm } from "./components/orders/CustomOrders"
 import { AboutUs } from "./components/about/AboutUs"
 import { Inventory } from "./components/orders/InventoryOrders/Inventory"
@@ -15,7 +15,7 @@ export const ApplicationViews = () => {
             <Routes>
                 <Route exact path="/" element={<Home />} />
 
-                <Route path="/contact" element={<ContactUs />} />
+                {/* <Route path="/contact" element={<ContactUs />} /> */}
 
                 <Route path="/custom_order" element={<CustomOrderForm />} />
                 <Route path="/inventory_order" element={<Inventory />} />
