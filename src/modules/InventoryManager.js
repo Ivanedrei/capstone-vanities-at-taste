@@ -22,3 +22,8 @@ export const getInventoryById = (inventoryId) => {
     return fetch(`${remoteURL}/inventory/${inventoryId}?_expand=style`)
         .then(res => res.json())
 }
+
+export const getStyles = () => {
+    return fetch(`${remoteURL}/styles`)
+        .then(res => res.json())
+}

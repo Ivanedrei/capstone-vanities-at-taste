@@ -1,7 +1,7 @@
 const remoteURL = "http://localhost:8088"
 
-export const getAllPurchases = (purchaseId) => {
-    return fetch(`${remoteURL}/purchases/${purchaseId}?_expand=user`)
+export const getAllPurchases = () => {
+    return fetch(`${remoteURL}/purchases`)
         .then(res => res.json())
 }
 export const getAllUsers = () => {
