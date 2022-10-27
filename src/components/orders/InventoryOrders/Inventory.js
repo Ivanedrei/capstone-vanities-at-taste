@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useNavigate, useParams } from 'react-router-dom';
-import { addOrders, getAllInventory, getInventoryById } from "../../../modules/InventoryManager";
+import { addOrders, getAllInventory } from "../../../modules/InventoryManager";
 
 import "./Inventory.css"
 
@@ -8,25 +8,23 @@ import "./Inventory.css"
 export const Inventory = () => {
     //[] inside useState creates a list; while {} creates a new object to store in database.
     const [inventory, setInventory] = useState([])
+    // const [style, setStyle] = useState({})
     const [isLoading, setIsLoading] = useState(true);
     const { inventoryId } = useParams(); //where is it getting it from? InventoryManager??
     const navigate = useNavigate()
 
-    // try to retrieve object by id but i don't have the value passing to the invoked function getInventoryById
     useEffect(() => {
-        //getInventoryById(inventoryId) //from inventoryManager and hang on to the data; put it into state
-        console.log("useEffect", inventoryId)
-        getInventoryById(inventoryId)
-            .then(Inventory => {
-                setInventory(Inventory);
+        getAllInventory()
+            .then((selectedItem) => {
+                setInventory(selectedItem);
                 setIsLoading(false);
             });
-    }, [inventoryId]);
+    }, []);
 
     // useEffect(() => {
-    //     getAllInventory()
-    //         .then((newinventory) => {
-    //             setInventory(newinventory);
+    //     getStyles()
+    //         .then((selectedItem) => {
+    //             setStyle(selectedItem);
     //             setIsLoading(false);
     //         });
     // }, []);
@@ -66,26 +64,20 @@ export const Inventory = () => {
         <>
             <h1 className="inventory_title">Existing Inventory</h1>
             <section className="form-flex">
-                <div className="form-component">
-                    <h2 className="form-title">
-                        Rustic
-                    </h2>
-                    <div id="img-inventory" className="form-img1">
+                {inventory.map(i =>
+                    <div className="form-component">
+                        <h2 className="form-title">
+                            {i.styleId}
+                        </h2>
+                        <div id="img-inventory" className="form-img1">
+                            <div>
+                                <img className="img_inventory2" src={i.imgUrl}></img>
+                            </div>
 
-                        <img id="img-inventory2" src="https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0908/benchwright-72-double-sink-vanity-2-o.jpg"
-                            alt="rustic1" onClick={updateSelectInventory}></img>
+                        </div>
+                    </div>)}
 
-                        <img id="img-inventory2" src="https://www.sprucdmarket.com/wp-content/uploads/2018/08/36473173_488420491616469_7893135448837455872_n.jpg"
-                            alt="rustic2" onClick={updateSelectInventory}></img>
-                        <p>{inventory.price}</p>
-
-                        <img id="img-inventory2" src="https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202209/1393/abbott-68-double-sink-vanity-o.jpg"
-                            alt="rustic3" onClick={updateSelectInventory}></img>
-
-                    </div>
-                </div>
-
-                <div className="form-component">
+                {/* <div className="form-component">
                     <h2 className="form-title">
                         Farm
                     </h2>
@@ -127,7 +119,7 @@ export const Inventory = () => {
                         <img id="img-inventory2" src="https://img1.homary.com/mall/file/2021/10/29/cfa3cbd8accc4d8fae5ea93054d34fb5.jpg"
                             alt="modern3" onClick={updateSelectInventory}></img>
                     </div>
-                </div>
+                </div> */}
                 <div id="btn_flex">
                     <button className="inv_btn" disabled={isLoading}
                         onClick={handleClickSummit}>

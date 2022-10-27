@@ -19,6 +19,7 @@ export const ViewOrders = () => {
         getAllInventory()
             .then((newPurchase) => {
                 setInventory(newPurchase);
+                console.log("Helloooo", setPurchases)
             });
     }, []);
 
@@ -43,7 +44,7 @@ export const ViewOrders = () => {
                 <div>
                     <h3>Inventory Orders</h3>
                     <div>
-                        {inventory.map(item => <img src={item.imgUrl} alt="img_order"></img>)}
+                        {purchases.map(item => <img src={item.imgUrl} alt="img_order"></img>)}
                     </div>
                 </div>
             </section>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ContactUs.css";
+import "./contactUs.css";
 import { useNavigate } from 'react-router-dom';
 import { getAllContacts, getAllUsers, addContact } from "../../modules/ContactUsManager";
 
