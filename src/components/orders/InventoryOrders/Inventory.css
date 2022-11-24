@@ -9,6 +9,7 @@
 
 #img-inventory {
     display: flex;
+
 }
 
 #img-inventory2 {
@@ -17,8 +18,10 @@
     width: 20em;
     height: 15em;
     margin: 2em 4em 2em 4em;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 10%;
+    border: 10px solid red;
+
 }
 
 .form-title {

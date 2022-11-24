@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react"
 import { useNavigate, useParams } from 'react-router-dom';
-import { addOrders, getAllInventory } from "../../../modules/InventoryManager";
+import { addOrders, getAllInventory, getStyles } from "../../../modules/InventoryManager";
 
 import "./Inventory.css"
+import { InventoryItem } from "./InventoryItem";
 
 
 export const Inventory = () => {
     //[] inside useState creates a list; while {} creates a new object to store in database.
     const [inventory, setInventory] = useState([])
-    // const [style, setStyle] = useState({})
+    const [style, setStyle] = useState([])
     const [isLoading, setIsLoading] = useState(true);
     const { inventoryId } = useParams(); //where is it getting it from? InventoryManager??
     const navigate = useNavigate()
@@ -21,13 +22,13 @@ export const Inventory = () => {
             });
     }, []);
 
-    // useEffect(() => {
-    //     getStyles()
-    //         .then((selectedItem) => {
-    //             setStyle(selectedItem);
-    //             setIsLoading(false);
-    //         });
-    // }, []);
+    useEffect(() => {
+        getStyles()
+            .then((style) => {
+                setStyle(style);
+                setIsLoading(false);
+            });
+    }, []);
 
     // console.log(inventory[0].id)
 
@@ -60,22 +61,32 @@ export const Inventory = () => {
         }
     }
 
+    // const Item = () => {
+    // }
+
     return (
         <>
             <h1 className="inventory_title">Existing Inventory</h1>
             <section className="form-flex">
                 {inventory.map(i =>
+                    <div>
+                        <img src={i.imgUrl} alt={i.id} />
+                        {/* //  {inventory.map(i => )}
+                    // < img src={inventory.img} > </img> */}
+                    </div>
+                )}
+                {/* {inventory.map(i =>
                     <div className="form-component">
-                        <h2 className="form-title">
-                            {i.styleId}
-                        </h2>
+                        {style.map(s =>
+                            <h2 className="form-title">  </h2>
+                        )}
                         <div id="img-inventory" className="form-img1">
                             <div>
-                                <img className="img_inventory2" src={i.imgUrl}></img>
+                                <img className="img-inventory2" alt="image" src={i.imgUrl}></img>
                             </div>
 
                         </div>
-                    </div>)}
+                    </div>)} */}
 
                 {/* <div className="form-component">
                     <h2 className="form-title">
