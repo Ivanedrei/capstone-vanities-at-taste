@@ -11,17 +11,17 @@
   "styles": [
     {
       "id": 1,
-      "name": "rustic",
+      "name": "Rustic",
       "price": 1000
     },
     {
       "id": 2,
-      "name": "farm",
+      "name": "Farm",
       "price": 800
     },
     {
       "id": 3,
-      "name": "classic",
+      "name": "Classic",
       "price": 900
     },
     {
