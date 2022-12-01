@@ -7,21 +7,33 @@
     padding: 2em
 }
 
-#img-inventory {
+.inv-flexy {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#img-inv {
+    width: 20em;
+    height: 15em;
+    margin: 4em 4em 4em 4em;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+#details {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: -2em 0em 3em 0em;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* border: 2px solid red; */
 
 }
 
-#img-inventory2 {
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 20em;
-    height: 15em;
-    margin: 2em 4em 2em 4em;
-    /* border: 2px solid black; */
-    border-radius: 10%;
-    border: 10px solid red;
-
+.style {
+    padding: 1em;
+    border-top: 2px solid black;
 }
 
 .form-title {
@@ -34,14 +46,8 @@
 }
 
 .inv_btn {
-    margin: 5em 0em 5em 35em;
-    align-items: center;
     font-size: 16px;
-    padding: 8px;
-    border: 2px solid black;
-    border-radius: 17%;
-    background-color: whitesmoke;
-    color: black;
+    border: 2px solid red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 

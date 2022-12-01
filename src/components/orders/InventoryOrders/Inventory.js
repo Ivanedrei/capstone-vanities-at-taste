@@ -9,9 +9,13 @@ import { InventoryItem } from "./InventoryItem";
 export const Inventory = () => {
     //[] inside useState creates a list; while {} creates a new object to store in database.
     const [inventory, setInventory] = useState([])
-    const [style, setStyle] = useState([])
+    const [styles, setStyle] = useState({
+        id: 0,
+        name: "",
+        price: 0
+    })
     const [isLoading, setIsLoading] = useState(true);
-    const { inventoryId } = useParams(); //where is it getting it from? InventoryManager??
+    const { inventoryId } = useParams(); //where is it getting it from? ->ApplicationViews
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -24,11 +28,12 @@ export const Inventory = () => {
 
     useEffect(() => {
         getStyles()
-            .then((style) => {
-                setStyle(style);
+            .then((styles) => {
+                setStyle(styles);
                 setIsLoading(false);
             });
     }, []);
+    console.log(setStyle + " styles!!!")
 
     // console.log(inventory[0].id)
 
@@ -61,20 +66,31 @@ export const Inventory = () => {
         }
     }
 
-    // const Item = () => {
-    // }
+    const styleName = (styles, i) => {
+
+        // inventory(inventory.styleId = styles.id); {
+        //     return styles.name
+        // }
+    }
+
 
     return (
         <>
             <h1 className="inventory_title">Existing Inventory</h1>
-            <section className="form-flex">
-                {inventory.map(i =>
-                    <div>
-                        <img src={i.imgUrl} alt={i.id} />
-                        {/* //  {inventory.map(i => )}
-                    // < img src={inventory.img} > </img> */}
-                    </div>
-                )}
+            <section className="">
+                <div className="inv-flexy">
+                    {inventory.map(i =>
+                        <div className="img-flexy">
+                            <img id="img-inv" src={i.imgUrl} alt={i.id} />
+                            <p id="details"> ${i.price}.00</p>
+                            <p id="details" className="style"> {i.style} Style</p>
+                            <button className="inv_btn" disabled={isLoading}
+                                onClick={handleClickSummit}>
+                                Proceed to Checkout
+                            </button>
+                        </div>
+                    )}
+                </div>
                 {/* {inventory.map(i =>
                     <div className="form-component">
                         {style.map(s =>
